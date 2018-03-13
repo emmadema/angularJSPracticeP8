@@ -1,23 +1,18 @@
-
-<div class="col-md-10 col-md-offset-1">
- 
-        <div class="page-header">
-          <h1>Star Wars</h1>
-        </div>
-       
-        <div class="panel panel-default" ng-repeat="person in data">
-          <div class="panel-heading">
-            <a href="#/character/{{ person.name }}">{{ person.name }}</a>
-          </div>
-          <div class="panel-body">
-            <ul class="btn-group" ng-repeat="film in person.films">
-              <a href="#/movie/{{ films[film].episode_id }}">
-                <button class="btn btn-primary">
-                {{ films[film].title }}
-                </button>
-              </a>  
-            </ul>
-          </div>
-        </div>
-       
-      </div>
+<!--Main Page-->
+<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="page-header">
+    <img id="starWarsLogo" src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Star_Wars_Yellow_Logo.svg"/>
+  </div>
+  <div class="panel panel-default" ng-repeat="person in data">
+    <div class="panel-heading panel-heading-custom">
+      <a href="#/character/{{ person.name }}">{{ person.name }}</a>
+    </div>
+    <div class="panel-body">
+      <ul class="btn-group" ng-repeat="film in person.films">
+        <a href="#/movie/{{ films[film].episode_id }}">
+          <button class="btn btn-primary">{{ films[film].title }}</button>
+        </a>
+      </ul>
+    </div>
+  </div>
+</div>

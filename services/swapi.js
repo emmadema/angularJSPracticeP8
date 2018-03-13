@@ -1,3 +1,4 @@
+//API Services
 var services = angular.module('swapi', []);
 
 services.factory('SwapiService', ['$http',
@@ -25,7 +26,6 @@ services.factory('SwapiService', ['$http',
           return response;
         })
     }
-
     return Swapi;
   }
 ]);
