@@ -1,5 +1,5 @@
 Star Wars APP
 
-This simple app allows you to select characters and planets. When a character is selected the planet the character lives on will show on the screen. 
+This app allows you to select characters and films. The films are filtered to appear under the characters who started in them. To access information about a film or character click on the name.
 
-To use open in VS code and use local server.
+To use open in VScode and use local server for API.
