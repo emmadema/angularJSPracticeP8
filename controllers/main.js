@@ -1,7 +1,4 @@
-starWarsApp.controller('MainCtrl', [ 
-  '$scope',
-  'SwapiService',
-  function($scope, SwapiService){
+starWarsApp.controller('MainCtrl', ['$scope', 'SwapiService',function($scope, SwapiService){
     $scope.heading = "Hello World";
     $scope.message = "This is me";
 
@@ -26,7 +23,8 @@ starWarsApp.controller('MainCtrl', [
           var api_call = 'https://swapi.co/api/films/' + film.episode_id + '/';
           $scope.films[api_call] = {
             'title': film.title,
-            'episode_id': film.episode_id
+            'episode_id': film.episode_id,
+            'characters': film.characters
           };
         });
 

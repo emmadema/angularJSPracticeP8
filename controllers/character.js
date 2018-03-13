@@ -1,8 +1,8 @@
 //Character Controller
 
 starWarsApp.controller('CharacterCtrl', ['$routeParams','$scope', 'SwapiService', function($routeParams, $scope, SwapiService){
-        $scope.character = {};
         $scope.loading = true;
+        $scope.character = {};
         $scope.id = $routeParams.id;
 
         SwapiService.people()

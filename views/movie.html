@@ -1,7 +1,7 @@
 <!--Movie Page-->
-<div class="col-xs-6 ol-md-10" ng-if="loading">
+<div class="col-xs-6 col-sm-12 col-md-12 col-lg-12" ng-if="loading">
     <div class="page-header">
-        <h1>Loading...</h1>
+        <h1>Please Wait...</h1>
     </div>
 </div>
 <div class="col-xs-6 col-md-10" ng-if="!loading">
@@ -30,8 +30,8 @@
         </div>
     </div>
     <div class="panel panel-default">
-        <div class="panel-body">
-            Producer: {{ movie.producer }}
+        <div class="panel-body" ng-repeat="character in films.characters">
+            Characters: {{characterName[character]}}
         </div>
     </div>
 </div>

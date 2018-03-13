@@ -1,8 +1,7 @@
 //API Services
 var services = angular.module('swapi', []);
 
-services.factory('SwapiService', ['$http',
-  function($http){
+services.factory('SwapiService', ['$http', function($http){
     function Swapi(){};
 
     Swapi.domain = 'https://swapi.co/api';
