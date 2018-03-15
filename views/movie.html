@@ -32,9 +32,10 @@
     <div class="panel panel-default">
         Characters:
         <div class="panel-body" ng-repeat="character in movie.characters">
-       
             <ul class="btn-group" >
-               <button>{{character}}</button>
+                <a href="#/character/{{ characters[character].character_id }}">
+                    <button>{{characters[character].name}}</button>
+                </a>
             </ul>
         </div>
     </div>
