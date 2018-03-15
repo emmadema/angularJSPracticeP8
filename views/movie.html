@@ -30,9 +30,9 @@
         </div>
     </div>
     <div class="panel panel-default">
-        <div class="panel-body">
+        <div class="panel-body" ng-repeat="character in movie.characters">
             <ul class="btn-group" >
-               <button>{{movie.characters}}</button>
+               <button>{{character}}</button>
             </ul>
         </div>
     </div>
